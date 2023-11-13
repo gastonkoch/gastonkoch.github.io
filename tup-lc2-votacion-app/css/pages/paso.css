@@ -32,11 +32,7 @@
     --mensaje-usuario-rojo: #dc3545;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    height: 130px;
-}
+
 
 .container>button {
     background-color: var(--gris-claro);
@@ -257,7 +253,7 @@ label {
 .verde {
     background-color: var(--mensaje-usuario-verde);
     border: 1px solid white;
-    width: 400px;
+    width: 500px;
     margin: 20px auto;
     padding: 15px;
     border-radius: 10px;
@@ -265,12 +261,17 @@ label {
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+    align-items: center;
+}
+
+#mensaje_verde {
+    margin-left: 10px;
 }
 
 .rojo {
     background-color: var(--mensaje-usuario-rojo);
     border: 1px solid white;
-    width: 400px;
+    width: 500px;
     margin: 20px auto;
     padding: 15px;
     border-radius: 10px;
@@ -278,12 +279,17 @@ label {
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+    align-items: center;
+}
+
+#mensaje_rojo{
+    margin-left: 10px;
 }
 
 .amarillo {
     background-color: var(--mensaje-usuario-amarillo);
     border: 1px solid white;
-    width: 400px;
+    width: 500px;
     margin: 20px auto;
     padding: 15px;
     border-radius: 10px;
@@ -291,12 +297,13 @@ label {
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+    display: flex;
+    align-items: center;
+    
 }
 
-.tarjetas {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+#mensaje_amarrillo {
+    margin-left: 10px;
 }
 
 .tarjeta {
@@ -306,7 +313,7 @@ label {
     flex: 1;
     margin-right: 10px;
     justify-content: center;
-    max-width: 500px;
+    max-width: 400px;
     height: 465px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -317,19 +324,21 @@ label {
     font-weight: bold;
     padding: 1.8em 0 0 0;
     white-space: nowrap;
+    font-size: 15px;
 }
 
-.tarjeta>h4 {
+.tarjeta>div>h4 {
     margin: auto 5px;
     border-bottom: 1px solid rgb(109, 99, 99);
+    font-size: 14px;
 }
 
-.provincia {
+.distritos {
     display: flex;
     justify-content: center;
 }
 
-.provincia>svg {
+.distritos>svg {
     display: flex;
     justify-content: flex-end;
     height: 325px;
@@ -350,6 +359,7 @@ svg>path {
 .partidopoliticoleft>p,
 .partidopoliticoright>p {
     color: black;
+    font-size: 11px;
 }
 
 .tarjeta>h5 {
@@ -357,6 +367,7 @@ svg>path {
     justify-content: flex-end;
     margin-right: 10px;
     margin-top: -1px;
+    font-size: 11px;
 }
 
 
@@ -415,13 +426,13 @@ svg>path {
 
 .chart-wrap.horizontal .bar::after {
     /* giramos las letras para horizontal*/
-    transform: rotate(45deg);
+    transform: rotate(47deg);
     padding-top: 0px;
     display: block;
 }
 
 .chart-wrap .grid {
-    margin-left: 50px;
+    margin-top: 80px;
     position: relative;
     padding: 5px 0 5px 0;
     height: 100%;
@@ -474,6 +485,53 @@ svg>path {
     display: inline-block;
     white-space: nowrap;
     position: relative;
-    left: 25px;
-    bottom: 36px;
+    left: 12px;
+    bottom: 42px;
+}
+
+.filtrar > button  {
+    border: none;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.filtrar > button > p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: var(--textos);
+    font-size: 10px;
+    margin-left: 5px;
+    width: 130px;
+    text-align: center;
+}
+
+.filtrar > button > svg {
+    fill: black;
+}
+
+/* #elecciones_div {
+    display: none;
+} */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+} */
+
+
+/* .tarjetas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+} */
+
+.container {
+    display: none;
+}
+
+.tarjetas {
+    display: none;
 }

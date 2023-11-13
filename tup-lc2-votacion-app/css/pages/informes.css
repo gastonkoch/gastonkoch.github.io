@@ -124,7 +124,13 @@
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+    align-items: center;
 }
+
+#mensaje_verde {
+    margin-left: 10px;
+}
+
 
 .rojo {
     background-color: var(--mensaje-usuario-rojo);
@@ -137,6 +143,11 @@
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+    align-items: center;
+}
+
+#mensaje_rojo{
+    margin-left: 10px;
 }
 
 .amarillo {
@@ -150,28 +161,35 @@
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+    align-items: center;
+}
+
+#mensaje_amarrillo {
+    margin-left: 10px;
 }
 
 #sec-titulo{
     position: relative;
-    left: 375px;
+    left: 175px;
 }
 
 .grillacenter {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-right: 100px;
 }
 
 
 .grilla {
     display: grid;
-    grid-template-columns: 300px 300px 600px 450px;
+    grid-template-columns: 200px 150px 605px 325px;
     grid-template-rows: auto 300px;
     border-radius: 15px;
     border: 1px var(--borde-Grilla) solid;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: rgb(243, 241, 241);
+    /* margin-right: 50px; */
 }
 
 .c1, .c2, .c3, .c4 {
@@ -184,21 +202,42 @@
     padding-bottom: 10px;
 }
 
+.c5 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.c5 > svg{
+    left: 10px;
+    width: 225px;
+    height: 180px;
+}
+
+.c5 > svg > .leaflet-interactive {
+    position: relative;
+    left: 1px;
+}
+
+
+
+
 .c6 > h2{
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 13px;
+    margin-left: 10px;
 }
 
-.c6 > h2,p{
-    margin-left: 10px;
+/* .c6 > p{
+
     margin-right: 5px;
-}
+} */
 
 .c6 > p {
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 10px;
     font-family: 'Roboto' sans-serif;
     color: var(--celeste);
 }
@@ -216,9 +255,11 @@
     padding: 5px;
     align-items: flex-start;
     display: flex;
-    width: 200px;
+    width: 250px;
     margin: 10px 10px auto;
-    height: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -228,9 +269,11 @@
     padding: 5px;
     align-items: flex-start;
     display: flex;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 90px;
     margin: 10px 10px auto;
+    display: flex;
+    align-items: center;
 }
 
 .participacion {
@@ -241,22 +284,26 @@
     display: flex;
     width: 250px;
     margin: 10px 10px auto;
-    height: 100px;
+    height: 90px;
+    align-items: center;
 }
 
 .mesas >h4,
 p {
     color: white;
+    font-size: 12px;
 }
 
 .participacion>h4,
 p {
     color: white;
+    font-size: 12px;
 }
 
 .electores>h4,
 p {
     color: white;
+    font-size: 12px;
 }
 
 .partidoscenter {
@@ -265,7 +312,7 @@ p {
 }
 
 .leftgrilla {
-    margin-left: 10px;
+    margin-left: 3px;
 }
 
 .rigthgrilla {
@@ -276,9 +323,32 @@ p {
     color: black;
     font-weight: bold;
     line-height: 40px;
+    font-size: 10px;
 }
 
 .rigthgrilla > p{
     color: black;
-    line-height: 22px
+    line-height: 22px;
+    font-size: 10px;
+}
+
+.texto-tarjetas {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-tarjetas > h4{
+    height: 10px;
+}
+
+.texto-tarjetas > h4,p{
+    color: white;
+    /* font-weight: bold; */
+}
+
+
+
+#caja_8{
+    overflow-x: hidden;
+    overflow-y: auto;
 }
